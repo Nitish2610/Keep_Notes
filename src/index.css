@@ -1,13 +1,134 @@
-body {
+*{
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+.header{
+  background-color: #ffff009b;
+  display: flex;
+}
+h1{
+  padding-top: 20px;
+  color: purple;
+}
+img{
+  margin-left: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+footer{
+  width: 100%;
+  position:fixed;
+  bottom: 0;
 }
+
+footer p{
+  background-color: #333;
+  color: #fff;
+  padding: 0px;
+  margin: 0;
+  text-align: center;
+}
+
+.main-note{
+  width: 500px;
+  padding: 10px;
+  margin: auto;
+}
+.form{
+  min-height: 50px;
+  color: white;
+  padding: 10px;
+  box-shadow: 3px 5px 15px 3px lightgray;
+  border-radius: 5px;
+  position: relative;
+}
+input{
+  outline: none;
+  color: #333;
+  border: none;
+  width: 100%;
+  line-height: 30px;
+  background: transparent;
+  margin: 10px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+textarea{
+  outline: none;
+  color: #333;
+  border: none;
+  width: 100%;
+  line-height: 30px;
+  background: transparent;
+  margin: 10px 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.MuiButton-root{
+   width: 30px;
+   height: 50px;
+   position: absolute;
+   left: 400px;
+   bottom: -28px;
+   cursor: pointer;
+   background-color: #fff !important;
+   border-radius: 50% !important;
+}
+
+.MuiButton-root .plus-sign{
+     font-size: 38px !important;
+     font-weight: 900;
+     color: #f4b000;
+     cursor: pointer;
+     background: transparent;
+     z-index: 222;
+}
+.MuiButton-root:hover{
+  background-color: #f4b400;
+}
+.MuiButton-root:hover .plus-sign{
+  color: green;
+  background: transparent;
+} 
+
+
+ .note{
+  width: 200px;
+  padding: 10px;
+  height: 120px;
+  padding: 10px;
+  box-shadow: 3px 5px 15px 3px lightgray;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 10px;
+  display: inline-block;
+  margin: 10px;
+  margin-left: 40px;
+}
+
+.btn{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 160px;
+  bottom: -1px;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50% !important;
+  border: none;
+  outline: none;
+}
+
+.btn .deleteicon{
+  font-weight: 900;
+  color: #f4b000;
+  cursor: pointer;
+  background: transparent;
+}
+
+.btn .deleteicon:hover{
+  color: red;
+}
+ 
